@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-module AvosService
+module LeanCloud
   class Configuration
     attr_accessor :application_id, :application_key, :version, :host, :protocol
 

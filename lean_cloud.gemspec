@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'avos_service/version'
+require 'lean_cloud/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "avos_service"
-  spec.version       = AvosService::VERSION
+  spec.name          = "lean_cloud"
+  spec.version       = LeanCloud::VERSION
   spec.authors       = ["LYY"]
   spec.email         = ["shinxjl+github@gmail.com"]
-  spec.summary       = %q{LeanCloud (AVOS Cloud) restful API for ruby.}
-  spec.description   = %q{LeanCloud (AVOS Cloud) restful API for ruby.}
+  spec.summary       = %q{LeanCloud restful API for ruby.}
+  spec.description   = %q{LeanCloud restful API for ruby.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

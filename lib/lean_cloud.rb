@@ -1,12 +1,12 @@
 # -*- encoding : utf-8 -*-
 require 'rest_client'
 require "multi_json"
-require "avos_service/version"
-require "avos_service/configuration"
-require "avos_service/rest_base"
-require "avos_service/push"
+require "lean_cloud/version"
+require "lean_cloud/configuration"
+require "lean_cloud/rest_base"
+require "lean_cloud/push"
 
-module AvosService
+module LeanCloud
   extend self
   attr_accessor :configuration
 
@@ -20,4 +20,4 @@ module AvosService
   end
 end
 
-AvosService.configure {}
+LeanCloud.configure {}

@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-module AvosService
+module LeanCloud
   class RestBase
     attr_accessor :config
 
@@ -16,6 +16,7 @@ module AvosService
         :'X-AVOSCloud-Application-Id' => @config.application_id,
         :'X-AVOSCloud-Application-Key' => @config.application_key
       }.merge header
+
       RestClient.post url, json_data, header, &block
     end
   end
