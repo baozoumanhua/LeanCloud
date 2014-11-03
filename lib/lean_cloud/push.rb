@@ -9,7 +9,7 @@ module LeanCloud
       send_post '/push', request_body
     end
 
-    def push_by_device_type device_type, data
+    def push_by_device_type data, device_type
       device_type = device_type.to_s
       unless ['ios', 'android'].include?(device_type)
         raise 'not valid divice type. use "ios" or "android"'
@@ -18,7 +18,7 @@ module LeanCloud
       push data, {where: {deviceType: device_type, valid: true}}
     end
 
-    def push_to_installation installation, data
+    def push_to_installation data, installation
       push data, {where: {installationId: installation}}
     end
   end
