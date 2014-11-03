@@ -30,7 +30,7 @@ And then execute:
 
 获取接口对象：
 
-	lean_push = LeanCloud.push_service
+	push = LeanCloud.push_service
 	
 推送数据:
 
