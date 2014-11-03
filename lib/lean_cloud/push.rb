@@ -9,7 +9,8 @@ module LeanCloud
       send_post '/push', request_body
     end
 
-    def batch_push device_type, data
+    def push_by_device_type device_type, data
+      device_type = device_type.to_s
       unless ['ios', 'android'].include?(device_type)
         raise 'not valid divice type. use "ios" or "android"'
       end
