@@ -6,7 +6,7 @@ require "avos_service/configuration"
 require "avos_service/rest_base"
 require "avos_service/push"
 
-module AvosService
+module LeanCloud
   extend self
   attr_accessor :configuration
 
@@ -20,4 +20,4 @@ module AvosService
   end
 end
 
-AvosService.configure {}
+LeanCloud.configure {}
